@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center justify-content-center border-bottom">
+      <h1>Welcom to my API</h1>
+    </div>
+    <div class="text-center justify-content-center border-bottom">
+      <h2>Toys Routes</h2>
+    </div>
+    <br>
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>POST</p>
+        <a class=" text-white" href="http://localhost:3000/toys">http://localhost:3000/toys</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>Add a new toy to the data base, with token for this query</p>
+        <br>
+        <p>
+          { "name": "name of the toy",
+          <br>
+          "info": "Info about the toy",
+          <br>
+          "category": "The categiry of the toy",
+          <br>
+          "img_url": "image",
+          <br>
+          "price": how much the toy is cost }
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>PUT</p>
+        <a class=" text-white" href="http://localhost:3000/toys/:idToy">http://localhost:3000/toys/:idToy</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>Update a toy in the data base, with token for this query</p>
+        <p>
+          { "name": "name of the toy",
+          <br>
+          "info": "Info about the toy",
+          <br>
+          "category": "The categiry of the toy",
+          <br>
+          "img_url": "image",
+          <br>
+          "price": how much the toy is cost }
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>DELETE</p>
+        <a class=" text-white" href="http://localhost:3000/toys/:idDel">http://localhost:3000/toys/:idDel</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p> delete a toy from the data base, with token for this query</p>
+      </div>
+    </div>
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>GET</p>
+        <a class=" text-white"
+          href="http://localhost:3000/toys/search?s=two">http://localhost:3000/toys/search?s=two</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>Search for toy or some word that include the product description </p>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>GET</p>
+        <a class=" text-white" href="http://localhost:3000/toys">http://localhost:3000/toys</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>Get a list of the toys that have 12 results per page</p>
+      </div>
+    </div>
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>GET</p>
+        <a class=" text-white"
+          href="http://localhost:3000/toys/cat/Mind-Games">http://localhost:3000/toys/cat/Mind-Games</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p> Search for products by category</p>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>GET</p>
+        <a class=" text-white" href="http://localhost:3000/toys/prices/?min=10&max=40">
+          http://localhost:3000/toys/prices/?min=10&max=40</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>It is possible to know the products at the prices we want by searching.
+          <br>
+          According to the example , we Get a list of all the toys priced between 10 and 40 .
+        </p>
+        <br>
+        <br>
+
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="text-center justify-content-center border-bottom">
+      <h2>Users Routes</h2>
+    </div>
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>POST</p>
+        <a class=" text-white" href="http://localhost:3000/users/login">http://localhost:3000/users/login</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>Add a new user to the data base</p>
+        <br>
+        <br>
+        <p>
+          {
+          "name": "the name of the user",
+          <br>
+          "email": "the email of the user",
+          <br>
+          "password": "the password of the user"
+          }
+        </p>
+        <br>
+        <br>
+      </div>
+
+    </div>
+    <div class="d-flex border-bottom">
+      <div class="bg-black text-light w-25 text-center">
+        <p>POST (login)</p>
+        <a class=" text-white" href="http://localhost:3000/users/login">http://localhost:3000/users/login</a>
+        <br>
+        <br>
+      </div>
+      <div class="bg-secondary w-75 text-center text-black">
+        <p>User login, if the email and password are correct the server will respond with a token</p>
+        <br>
+        <br>
+        <p>
+          {
+          "email": "the email of the user for login",
+          <br>
+          "password": "the password of the user for login"
+          }
+        </p>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
